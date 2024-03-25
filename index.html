@@ -32,7 +32,7 @@
     </head>
     <body>
         <div class="app">
-            <header class="shadow">
+            <header class="shadow" id="top">
                 <div class="container mx-auto max-md:px-2">
                     <div class="flex items-center justify-between py-4">
                         <div class="logo">
@@ -92,9 +92,11 @@
             <div
                 class="menu-mobile lg:hidden max-md:block absolute bg-white z-50 w-full h-full top-0 -left-full"
             >
-                <button class="flex items-center justify-end closeMenu">
-                    <img src="./images/Button close X.svg" alt="" />
-                </button>
+                <div class="flex items-center justify-end">
+                    <button class="closeMenu">
+                        <img src="./images/Button close X.svg" alt="" />
+                    </button>
+                </div>
                 <ul class="flex flex-col items-center gap-2">
                     <li>
                         <a href="#" class="hover:text-[#1FAB89] duration-300"
@@ -819,13 +821,15 @@
                     </div>
                 </div>
             </main>
-            <footer class="bg-[#1FAB89] py-8 text-white max-md:px-2">
-                <div class="container mx-auto">
-                    <div>
+            <footer class="bg-[#1FAB89] text-white max-md:px-2">
+                <div class="container mx-auto py-8">
+                    <div
+                        class="border-b border-[rgba(241, 255, 252, 0.4)] pb-8"
+                    >
                         <div class="grid grid-cols-4 gap-4 max-md:block">
                             <div>
                                 <img src="./images/logoft.svg" alt="" />
-                                <p class="py-8">
+                                <p class="py-8 max-md:py-4">
                                     Cheapest SMM Panel Over 10 Years! with 1DG
                                     SMM Panel - Social Services
                                 </p>
@@ -931,6 +935,20 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="container mx-auto pb-4">
+                    <div class="flex items-center justify-between relative">
+                        <p>
+                            Copyright © 2024 MFB.vn SMM Panel - Social Services
+                        </p>
+                        <a
+                            href="#top"
+                            class="flex items-center gap-2 absolute right-[15%] max-md:relative max-md:right-auto max-md:w-[200px]"
+                        >
+                            <img src="./images/top.svg" alt="" />
+                            Back to top
+                        </a>
                     </div>
                 </div>
             </footer>
